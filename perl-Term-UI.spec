@@ -1,9 +1,9 @@
 %define	upstream_name	 Term-UI
-%define upstream_version 0.26
+%define upstream_version 0.32
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Term::ReadLine UI made easy
 License:	Artistic/GPL
@@ -45,6 +45,9 @@ make test
 
 
 %changelog
+* Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.320.0-1
+- new version
+
 * Mon Feb 28 2011 Funda Wang <fwang@mandriva.org> 0.260.0-2mdv2011.0
 + Revision: 640782
 - rebuild to obsolete old packages
