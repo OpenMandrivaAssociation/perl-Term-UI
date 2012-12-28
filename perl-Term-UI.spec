@@ -1,15 +1,15 @@
-%define	upstream_name	 Term-UI
-%define upstream_version 0.32
+%define	modname	Term-UI
+%define	modver	0.32
 
-Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
+Name:		perl-%{modname}
+Version:	%{perl_convert_version %{modver}}
 Release:	1
 
 Summary:	Term::ReadLine UI made easy
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Term/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{modname}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Term/%{modname}-%{modver}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Log::Message::Simple)
@@ -26,7 +26,7 @@ can pick from and a default and "Term::UI" will DWYM.
 For asking a yes or no question, there's even a shortcut.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{modname}-%{modver}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -40,12 +40,12 @@ make test
 
 %files
 %doc README
-%{perl_vendorlib}/Term/*
+%{perl_vendorlib}/Term/UI*
 %{_mandir}/*/*
-
 
 %changelog
 * Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.320.0-1
+- cleanups
 - new version
 
 * Mon Feb 28 2011 Funda Wang <fwang@mandriva.org> 0.260.0-2mdv2011.0
@@ -91,8 +91,6 @@ make test
 * Fri Jun 22 2007 Buchan Milne <bgmilne@mandriva.org> 0.14-1mdv2008.0
 + Revision: 42867
 - Import perl-Term-UI
-
-
 
 * Thu Jun 21 2007 Buchan Milne <bgmilne@mandriva.org> 0.14-1mdv2007.1
 - initial package
