@@ -1,4 +1,5 @@
 removed_sources:
   Term-UI-0.36.tar.gz: d917bb8d3f02a81788cdbae926511df33a7372de
-sources:
   Term-UI-0.38.tar.gz: 7b306a01f0bbff603e8b3563fe9643ba2be412fb
+sources:
+  Term-UI-0.42.tar.gz: 54c5c4a15e2a763864d1fcda54b26c791c78cdb7
