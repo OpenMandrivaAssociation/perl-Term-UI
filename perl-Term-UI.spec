@@ -24,22 +24,22 @@ can pick from and a default and "Term::UI" will DWYM.
 For asking a yes or no question, there's even a shortcut.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README
 %{perl_vendorlib}/Term/*
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 
 
 
