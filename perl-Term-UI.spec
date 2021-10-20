@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Term/Term-UI-%{modver}
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Log::Message::Simple)
+BuildRequires:	perl(Test::More)
 
 %description
 "Term::UI" is a transparent way of eliminating the overhead of having to format
@@ -40,6 +41,3 @@ make test
 %doc README
 %{perl_vendorlib}/Term/*
 %doc %{_mandir}/man3/*
-
-
-
