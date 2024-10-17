@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	8
 License:	Artistic/GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}/
+Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Term/Term-UI-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
