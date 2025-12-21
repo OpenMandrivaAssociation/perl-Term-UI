@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{modname}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Term/Term-UI-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Log::Message::Simple)
 BuildRequires:	perl(Test::More)
