@@ -1,14 +1,14 @@
 %define	modname	Term-UI
-%define modver 0.42
+%define modver 0.50
 
 Summary:	Term::ReadLine UI made easy
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	8
+Version:	%{modver}
+Release:	1
 License:	Artistic/GPLv2
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}/
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Term/Term-UI-%{modver}.tar.gz
+Url:		https://github.com/jib/term-ui
+Source0:	https://cpan.metacpan.org/authors/id/B/BI/BINGOS/Term-UI-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
